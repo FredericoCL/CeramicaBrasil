@@ -1,0 +1,131 @@
+/*
+*
+* @author Frederico Lessa
+* @e-mail fred.lessa@gmail.com
+* @version 0.1
+*
+*/
+
+/* =================== Layout =================== */
+html, body, .company{
+	height: 100%;
+}
+
+/* -- Formatação do Body -- */
+body{
+	background: url('imagens/bg-pelicula.png'), no-repeat,
+				url('imagens/bg-fixo.png');
+	background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* -- Barra de Navegação -- */
+.img-logo{
+	height: 45px;
+	width: 200px;
+	display: block;
+	background: url('imagens/logo.png'), no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-branca{
+	background: white;
+	border-bottom-color: #991111;
+	padding: 15px 0px;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+
+}
+
+
+.navbar-inverse .navbar-nav>li>a{
+	color: #991111;
+	font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: black;
+}
+
+/* -- Imagem de Company -- */
+#home{
+	display: table;
+	width: 100%;
+}
+
+.img-home{
+	text-align: right;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	width: 35%;
+	padding: 15% 0% 10% 0%;
+}
+
+.texto-home{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	width: 65%;
+	padding: 15% 0% 10% 0%;
+}
+
+/* -- Seção Empresa -- */
+#empresa{
+	background: #fafafa;
+	padding: 20px 0px 40px 0px;
+}
+
+.img-empresa{
+	padding: 8px 0px 7px 0px;
+}
+
+/* -- Seção Produtos -- */
+#produtos{
+	background: #dadada;
+	padding: 20px 0px 40px 0px;
+}
+
+/* -- Seção Meio Ambiente -- */
+.sustentabilidade{
+	margin-top: -125px;
+	text-align: right;
+}
+
+#ambiente{
+	background: #7ac245;
+	padding: 20px 0px 40px 0px;
+}
+
+/* -- Contato -- */
+#contato{
+	background:#0e0e0e;
+	padding: 20px 0px 40px 0px;
+}
+
+/* -- Footer -- */
+#footer{
+	background:#080808;
+	padding: 20px 0px 20px 0px;
+}
+
+/* ================= Tipografia ================= */
+h1{
+	font-size: 72px;
+	letter-spacing: 5px;
+}
+
+h3{
+	font-size: 24px;
+	color: #f78837;
+}
+
+h5{
+	line-height: 22px;
+}
+
+/* =============== Media Queries =============== */
