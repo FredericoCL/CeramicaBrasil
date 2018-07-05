@@ -11,13 +11,15 @@ html, body, .company{
 	height: 100%;
 }
 
+
 /* -- Formatação do Body -- */
 body{
-	background: url('imagens/bg-pelicula.png'), no-repeat,
+	background: url('imagens/bg-pelicula.png'),
 				url('imagens/bg-fixo.png');
 	background-attachment: fixed;
 	font-family: 'Montserrat', sans-serif;
 }
+
 
 /* -- Barra de Navegação -- */
 .img-logo{
@@ -29,11 +31,13 @@ body{
 	color: transparent;
 }
 
+
 nav.navbar-branca{
 	background: white;
 	border-bottom-color: #991111;
 	padding: 15px 0px;
 }
+
 
 .navbar-brand{
 	padding: 5px 15px;
@@ -41,20 +45,23 @@ nav.navbar-branca{
 }
 
 
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse .navbar-nav>li>a.scroll{
 	color: #991111;
 	font-weight: bold;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover{
+
+.navbar-inverse .navbar-nav>li>a:hover.scroll{
 	color: black;
 }
+
 
 /* -- Imagem de Company -- */
 #home{
 	display: table;
 	width: 100%;
 }
+
 
 .img-home{
 	text-align: right;
@@ -65,6 +72,11 @@ nav.navbar-branca{
 	padding: 15% 0% 10% 0%;
 }
 
+.img-responsive{
+	float: right;
+}
+
+
 .texto-home{
 	text-align: center;
 	color: white;
@@ -74,38 +86,45 @@ nav.navbar-branca{
 	padding: 15% 0% 10% 0%;
 }
 
+
 /* -- Seção Empresa -- */
 #empresa{
 	background: #fafafa;
-	padding: 20px 0px 40px 0px;
+	padding: 80px 0px 80px 0px;
 }
+
 
 .img-empresa{
 	padding: 8px 0px 7px 0px;
 }
 
+
 /* -- Seção Produtos -- */
 #produtos{
 	background: #dadada;
-	padding: 20px 0px 40px 0px;
+	padding: 80px 0px 80px 0px;
 }
+
 
 /* -- Seção Meio Ambiente -- */
 .sustentabilidade{
-	margin-top: -125px;
+	margin-top: -185px;
 	text-align: right;
 }
 
+
 #ambiente{
+	padding: 80px 0px 80px 0px;
 	background: #7ac245;
-	padding: 20px 0px 40px 0px;
 }
+
 
 /* -- Contato -- */
 #contato{
 	background:#0e0e0e;
-	padding: 20px 0px 40px 0px;
+	padding: 80px 0px 80px 0px;
 }
+
 
 /* -- Footer -- */
 #footer{
@@ -113,19 +132,23 @@ nav.navbar-branca{
 	padding: 20px 0px 20px 0px;
 }
 
+
 /* ================= Tipografia ================= */
 h1{
 	font-size: 72px;
 	letter-spacing: 5px;
 }
 
+
 h3{
 	font-size: 24px;
 	color: #f78837;
 }
 
+
 h5{
 	line-height: 22px;
 }
+
 
 /* =============== Media Queries =============== */

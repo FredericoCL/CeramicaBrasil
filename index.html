@@ -9,6 +9,17 @@
     <link rel="icon" href="imagens/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+    <!-- Scroll em jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+     <script>
+      jQuery(document).ready(function($) {
+       $(".scroll").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+       });
+      });
+     </script>
+
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="estilo.css" rel="stylesheet">
@@ -50,11 +61,11 @@
         <!-- Navbar -->
         <div class="collapse navbar-collapse" id="barra-navegacao">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Home</a></li>
-            <li><a href="">Empresa</a></li>
-            <li><a href="">Produtos</a></li>
-            <li><a href="">Meio Ambiente</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a class="scroll" href="#home">Home</a></li>
+            <li><a class="scroll" href="#empresa">Empresa</a></li>
+            <li><a class="scroll" href="#produtos">Produtos</a></li>
+            <li><a class="scroll" href="#ambiente">Meio Ambiente</a></li>
+            <li><a class="scroll" href="#contato">Contato</a></li>
           </ul>
         </div><!-- /Navbar -->
         
@@ -65,7 +76,7 @@
     <!-- Home -->
     <div id="home">
       <div class="img-home">
-        <img src="imagens/telha-capa.png">        
+        <img src="imagens/telha-capa.png" class="img-responsive">        
       </div>
 
       <div class="texto-home">
@@ -216,10 +227,20 @@
 
           <h3>Contato</h3>
 
-          <!-- Contato -->
+          <!-- Dados de Contato -->
+          <div class="col-md-3">
+            Dados de Contato
+          </div><!-- /Dados de Contato -->
+
+          <!-- Como Chegar -->
+          <div class="col-md-3">
+            Mapa
+          </div><!-- /Como Chegar -->
+
+          <!-- Formulário de Contato -->
           <div class="col-md-6">
-            Página de Contato
-          </div><!-- /Contato -->
+            Formulário de Contato
+          </div><!-- /Formulário de Contato -->
           
         </div>
       </div>      
