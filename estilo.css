@@ -150,5 +150,10 @@ h5{
 	line-height: 22px;
 }
 
+h6{
+	line-height: 18px;
+	color: white;
+}
+
 
 /* =============== Media Queries =============== */
