@@ -7,8 +7,8 @@
 */
 
 /* =================== Layout =================== */
-html, body, .company{
-	height: 100%;
+html, body, .row, .company{
+	height: 100%; /* Altura */
 }
 
 
@@ -17,15 +17,22 @@ body{
 	background: url('../imagens/bg-pelicula.png'),
 				url('../imagens/bg-fixo.png');
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
+	-webkit-background-size: cover; /* Safari e Chrome */
+	-moz-background-size: cover; /* Firefox */
+	-ms-background-size: cover; /* IE */
+	-o-background-size: cover; /* Opera */
 	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden; /* Remoçção da Barra de Rolagem Inferior */
 }
 
 
 /* -- Barra de Navegação -- */
 .img-logo{
-	height: 45px;
-	width: 200px;
+	height: 45px; /* Altura */
+	width: 200px; /* Largura */
 	display: block;
 	background: url('../imagens/logo.png'), no-repeat;
 	background-size: contain;
@@ -58,37 +65,34 @@ nav.navbar-branca{
 
 /* -- Imagem de Company -- */
 #home{
-	display: table;
-	width: 100%;
+	height: 650px; /* Altura */
+	width: 100%; /* Largura */
+	align-items: center;
+	vertical-align: center;
+	display: flex;
+	padding: 25% 0 25% 0;
 }
 
 
 .img-home{
-	text-align: right;
-	color: white;
-	display: table-cell;
-	vertical-align: middle;
-	width: 35%;
-	padding: 15% 0% 10% 0%;
-}
-
-.img-responsive{
-	float: right;
+	margin: 0 auto;
+	padding-top: 25%;
+	justify-content: center;
 }
 
 
 .texto-home{
-	text-align: center;
 	color: white;
-	display: table-cell;
-	vertical-align: middle;
-	width: 65%;
-	padding: 15% 0% 10% 0%;
+	text-align: center;
+	text-indent: center;
+	margin: 0 auto;
+	padding-top: 20%;
 }
 
 
 /* -- Seção Empresa -- */
 #empresa{
+	width: 100%; /* Largura */
 	background: #fafafa;
 	padding: 80px 0px 80px 0px;
 }
@@ -119,6 +123,11 @@ nav.navbar-branca{
 }
 
 
+.img-responsive.img-before-sustentabilidade{
+	float: right;
+}
+
+
 /* -- Contato -- */
 #contato{
 	background:#0e0e0e;
@@ -128,12 +137,12 @@ nav.navbar-branca{
 
 /* -- Botões -- */
 .btn-custom{
-	color: #080808;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    margin: 10px 15px;
-    padding: 5px 45px;
+	color: gray;
+	font-size: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 5px 50px;
     transition: background 0.4s, color 0.4s;
 }
 
@@ -159,10 +168,21 @@ h1{
 	letter-spacing: 5px;
 }
 
+h1.txt-capa{
+	padding: 0px 0px 0px 0px;
+	margin: 0 auto;
+	letter-spacing: 10px;
+}
+
 
 h3{
 	font-size: 24px;
 	color: #f78837;
+}
+
+h3.txt-capa{
+	padding: 0px 0px 0px 0px;
+	margin: 0 auto;
 }
 
 

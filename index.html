@@ -82,16 +82,25 @@
     </nav><!-- /Barra de Navegação -->
 
     <!-- Home -->
-    <div id="home">
-      <div class="img-home">
-        <img src="imagens/telha-capa.png" class="img-responsive">        
+    <section id="home">
+      <div class="container">
+        <div class="row">
+          <!-- Imagem da Capa -->
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="img-home">
+              <img src="imagens/telha-capa.png" class="img-responsive">        
+            </div>
+          </div>
+          <!-- Texto da Capa -->
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="texto-home">
+              <h1 class="txt-capa">Cerâmica Brasil</h1>
+              <h3 class="txt-capa">Desde 1945 cobrindo a Casa dos Brasileiros!</h3>        
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="texto-home">
-        <h1>Cerâmica Brasil</h1>
-        <h3>Desde 1945 cobrindo a Casa dos Brasileiros!</h3>        
-      </div>      
-    </div><!-- Home -->
+    </section><!-- Home -->
 
     <!-- Empresa -->
     <section id="empresa">
@@ -190,7 +199,7 @@
         <div class="row">
 
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 sustentabilidade">
-            <img src="imagens/before-sustentabilidade.png" class="img-responsive">
+            <img src="imagens/before-sustentabilidade.png" class="img-responsive img-before-sustentabilidade">
           </div>
 
           <h3><span style="color: white">Meio Ambiente</span></h3>
@@ -269,16 +278,17 @@
             <form class="formContato" datta-toggle="validator" role="form">
 
               <div class="form-group">
-                <input type="text" id="nome" class="form-control" placeholder="Nome" required>                
+                <input type="text" id="nome" class="form-control" placeholder="Nome" 
+                data-error="Por favor, informe seu Nome." required>                
               </div>
               <div class="form-group">
                 <input type="email" id="email" class="form-control" placeholder="E-mail" 
-                data-error="Por favor, informe um e-mail válido." required>
+                data-error="Por favor, informe um E-mail válido." required>
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
                 <input type="tel" id="telefone" class="form-control" placeholder="Telefone"
-                pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}">
+                pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" data-error="Por favor, informe um Telefone válido." required>
                 <script type="text/javascript">$("#telefone").mask("(00) 0000-00009");</script>
               </div>
               <div class="form-group">
@@ -287,7 +297,7 @@
                 <div class="help-block with-errors"></div>
               </div>
 
-              <button type="button" class="btn btn-custom btn-branco btn-lg">
+              <button type="submit" class="btn btn-custom btn-branco btn-lg">
                 Enviar
               </button>
 
@@ -308,7 +318,7 @@
             <h6>Copyright © Cerâmica Brasil - Todos os direitos reservados</h6>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h6><span style="float: right;">Desenvolvido por Frederico Lessa</span></h6>
+            <h6><span style="float: right;">Desenvolvido por <a href="#">Frederico Lessa</a></span></h6>
           </div><!-- /Footer -->
           
         </div>
