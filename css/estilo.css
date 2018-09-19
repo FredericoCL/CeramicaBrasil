@@ -6,9 +6,11 @@
 *
 */
 
+
 /* =================== Layout =================== */
 html, body, .row, .company{
 	height: 100%; /* Altura */
+	min-height: 100%;
 }
 
 
@@ -146,14 +148,18 @@ nav.navbar-branca{
     transition: background 0.4s, color 0.4s;
 }
 
+
 .btn-branco{
 	border: 2px solid white;
 	background: white;
 }
+
+
 .btn-branco:hover{
 	background: transparent;
 	color: white;
 }
+
 
 /* -- Footer -- */
 #footer{
@@ -168,6 +174,7 @@ h1{
 	letter-spacing: 5px;
 }
 
+
 h1.txt-capa{
 	padding: 0px 0px 0px 0px;
 	margin: 0 auto;
@@ -180,6 +187,7 @@ h3{
 	color: #f78837;
 }
 
+
 h3.txt-capa{
 	padding: 0px 0px 0px 0px;
 	margin: 0 auto;
@@ -189,6 +197,7 @@ h3.txt-capa{
 h5{
 	line-height: 22px;
 }
+
 
 h6{
 	line-height: 18px;
